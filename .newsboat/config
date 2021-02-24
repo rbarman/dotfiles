@@ -1,0 +1,18 @@
+max-items 50
+
+# TODO: use default browser path like in i3 config?
+browser ~/appimages/LibreWolf.AppImage
+# browser firefox
+# browser "firefox --new-tab %u"
+
+macro v set browser "mpv"; open-in-browser ; set browser ~/appimages/LibreWolf.AppImage
+
+bind-key j next
+bind-key k prev
+bind-key J next-feed
+bind-key K prev-feed
+bind-key d delete-article
+
+#https://wiki.archlinux.org/index.php/Newsboat#Subheadings
+highlight feedlist "---.*---" red default bold
+highlight feedlist ".*0/0.." default default invis
