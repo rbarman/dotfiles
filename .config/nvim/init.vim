@@ -4,8 +4,16 @@ Plug 'davidhalter/jedi-vim'
 Plug 'dense-analysis/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
+
+" <Leader>
+let mapleader=","
+
+" vimwiki
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
 
 " gruvbox
 colorscheme gruvbox
