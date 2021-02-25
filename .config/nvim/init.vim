@@ -11,6 +11,8 @@ call plug#end()
 " <Leader>
 let mapleader=","
 
+" remap esc
+inoremap jj <Esc> 
 " vimwiki
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
