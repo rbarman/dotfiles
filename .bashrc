@@ -139,3 +139,4 @@ alias config='/usr/bin/git --git-dir=/home/rohan/.cfg/ --work-tree=/home/rohan'
 # don't create new window when running mpv
 # devour (https://github.com/salman-abedin/devour)
 alias mpv='devour mpv'
+alias o='xdg-open'
