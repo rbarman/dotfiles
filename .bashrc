@@ -140,5 +140,7 @@ alias config='/usr/bin/git --git-dir=/home/rohan/.cfg/ --work-tree=/home/rohan'
 # devour (https://github.com/salman-abedin/devour)
 alias mpv='devour mpv'
 alias o='xdg-open'
-
+alias youtube='ytfzf -ts'
+alias music='ytfzf -ms'
+alias n='nvim'
 export PATH="/home/rohan/.poetry/bin/:$PATH"
