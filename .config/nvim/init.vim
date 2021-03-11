@@ -4,7 +4,6 @@ Plug 'davidhalter/jedi-vim'
 Plug 'dense-analysis/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
-Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -13,9 +12,6 @@ let mapleader=","
 
 " remap esc
 inoremap jj <Esc> 
-" vimwiki
-let g:vimwiki_list = [{'path': '~/vimwiki/',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
 
 " gruvbox
 colorscheme gruvbox
@@ -37,3 +33,4 @@ let airline#extensions#ale#error_symbol = 'E'
 let airline#extensions#ale#warning_symbol = 'W'
 
 :set relativenumber
+:set nu rnu
