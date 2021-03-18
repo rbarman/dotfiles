@@ -96,9 +96,7 @@ bindsym $mod+$i3-wm.binding.terminal exec /usr/bin/gnome-terminal
 
 ## Launch // Browser // <><Shift> Enter ##
 set_from_resource $i3-wm.binding.browser i3-wm.binding.browser Shift+Return
-#bindsym $mod+$i3-wm.binding.browser exec gtk-launch $(xdg-settings get default-web-browser)
-# TODO: should update settings to have .appimage as default web application instead of hardcoding appimage path here...
-bindsym $mod+$i3-wm.binding.browser exec ~/appimages/LibreWolf.AppImage
+bindsym $mod+$i3-wm.binding.browser exec gtk-launch $(xdg-settings get default-web-browser)
 
 set_from_resource $rofiTheme rofi.theme /etc/regolith/styles/lascaille/rofi.rasi
 
