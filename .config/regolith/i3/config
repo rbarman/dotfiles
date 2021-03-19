@@ -462,9 +462,13 @@ bindsym $mod+w exec /usr/bin/gnome-terminal -e /home/rohan/bin/notetaker.sh -t n
 set_from_resource $i3-wm.workspace.auto_back_and_forth i3-wm.workspace.auto_back_and_forth no
 workspace_auto_back_and_forth $i3-wm.workspace.auto_back_and_forth
 
+# move focused workspace between monitors
+# https://unix.stackexchange.com/questions/397269/i3wm-how-to-move-workspaces-between-monitors
+bindsym $mod+Ctrl+greater move workspace to output right
+bindsym $mod+Ctrl+less move workspace to output left
+
 ###############################################################################
-# Window Resize and Gaps
-###############################################################################
+# Window Resize and Gaps ##############################################################################
 
 set_from_resource $i3-wm.binding.inc_gaps i3-wm.binding.inc_gaps plus
 set_from_resource $i3-wm.binding.dec_gaps i3-wm.binding.dec_gaps minus
