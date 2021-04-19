@@ -143,4 +143,5 @@ alias o='xdg-open'
 alias youtube='ytfzf -ts'
 alias music='ytfzf -ms'
 alias n='nvim'
+alias fix_audio='pulseaudio -k && sudo alsa force-reload'
 export PATH="/home/rohan/.poetry/bin/:$PATH"
